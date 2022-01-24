@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #dadfe8;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuContainer{
+    background-color: #e46693;
+    width: 40%;
+    min-height:200vh ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.travelContent{
+    background-color: #5e5a6ae3;
+    backdrop-filter: blur(5px);
+    width: 600px;
+    height: 300px;
+    transform: translate(40% ,0% );
+    color: white;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    z-index: 0;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+.travelContent h1{
+    font-size: 6rem;
+    letter-spacing: 40px;
+    text-transform: uppercase;
+    z-index: 2;
+    transform:translate(-30% , -60%);
+}
+.travelContent h3,.sunsetContent h3,.beachContent h3,.hotelContent h3{
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    transform:translate(-30% , -80%);
+    border-bottom: 3px solid white;
+    padding-bottom:.5rem ;
+}
+.travelContent p{
+    font-size: 1.3rem;
+    transform:translate(8% , -80%);
+}
+.sunsets,.beach,.hotel{
+    width: 120%;
+    margin: 10rem 0rem;
+    background-color:#d23be3af;
+    backdrop-filter: blur(5px);
+    height: 350px;
+    transform: translateX(-30px);
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+    color: rgb(90, 90, 90);
+
+}
+.sunsetContent,.beachContent,.hotelContent{
+    background-color: #ffffff;
+    transform: translate(-200px , -50px);
+    height: 300px;
+    width: 600px;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    padding: 0rem 5rem;
+    
+}
+.sunsets img,.beach img,.hotel img{
+    position: absolute;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    transform: translate(300px , -50px);
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+.sunsetContent p,.beachContent p,.hotelContent p{
+    font-size: 1.3rem;
+    transform: translateY(-50px);
+}
+
+.beach{
+    background-color: #1de3b1af;
+}
+.beachContent{
+    transform: translate(-280px , 80px); 
+    width: 50%;
+}
+.beach img{
+    width: 700px;
+    height: auto;
+    transform: translate(200px , 60px);
+
+}
+.hotel{
+    background-color: #00a6bfaf;
+    margin-top: 20rem;
+}
+.hotel img{
+    height: 550px;
+}
+@media screen and (max-width: 1500px) {
+    .menuContainer{
+        width: 50%;
+    }
+    .sunsets,.beach,.hotel{
+        width: 100%;
+        margin-top: 10rem;
+        height: 300px;
+    }
+    .sunsets img,.beach img,.hotel img{
+        width: 400px;
+        height: auto;
+    }
+    .beachContent{
+        transform: translate(-200px , 80px); 
+        width: 70%;
+    }
+    .sunsetContent p,.beachContent p,.hotelContent p{
+        font-size: 1rem;
+    }
+    .travelContent h3,.sunsetContent h3,.beachContent h3,.hotelContent h3{
+        font-size: 2rem;
+        letter-spacing: 15x;
+    }
+    .travelContent h1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+   
+    .travelContent{
+        transform: translate(-15% , 0%);
+    }
+    .travelContent h1{
+        transform:translate(-10% , -70%);   
+    }
+    .sunsetContent,.hotelContent{
+        width: 500px;
+        transform: translate(-200px , -50px);
+    }
+    .sunsets img,.beach img,.hotel img{
+        transform: translate(200px , -50px);
+       
+    }
+    .beachContent{
+        transform: translate(-100px , 30px); 
+        width: 80%;
+        
+
+    }
+    .sunsetContent h3,.beachContent h3,.hotelContent h3{
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .travelContent{
+        width: 400px;
+        height: 300px;
+    }
+    .travelContent h1{
+        letter-spacing: 10px;
+        font-size: 2rem;  
+    }
+    .travelContent h3{
+        transform:translate(-10% , -70%); 
+        font-size: 1rem;  
+    }
+    .sunsetContent,.hotelContent{
+        width: 400px;
+        height: 200px;
+        transform: translate(-100px , -50px);
+        padding: 0rem 2rem;
+
+    }
+    .sunsets img,.beach img,.hotel img{
+        transform: translate(200px , -50px); 
+        width: 70%;
+    }
+    .sunsets,.beach,.hotel{
+       height: 200px; 
+       margin-top: 6rem;
+
+    }
+    .beachContent{
+        transform: translate(-100px , 30px); 
+        width: 80%;
+        height: 200px;
+        padding: 0rem 2rem;
+    }
+    .sunsetContent h3,.beachContent h3,.hotelContent h3{
+        font-size: 1.4rem;
+        letter-spacing: 10px;
+    }
+    .sunsetContent p,.beachContent p,.hotelContent p{
+        font-size: .8rem;
+    }
+    .hotel img{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .sunsetContent,.hotelContent{
+        transform: translate(50px , -30px);
+        height: 150px;
+        padding: 1rem 0rem;
+    }
+    .sunsets img,.hotel img{
+        transform: translate(50px , 120px);
+    }
+    .beachContent{
+        transform: translate(10px , 0);
+        height: 150px;
+        width: 350px;
+        padding: 1.4rem 1rem;
+    }
+    .beach img{
+        transform: translate(50px , 150px);
+    }
+    .travelContent{
+        transform: translate(-40px , 0px);
+        width: 350px;
+        height: 300px;
+    }
+    .sunsets,.beach,.hotel{
+        margin-top: 2rem;
+     }
+
+}
+@media screen and (max-width: 450px) {
+    .sunsetContent,.hotelContent{
+        transform: translate(30px , -30px);
+        height: 150px;
+        width: 300px;
+        padding: 1rem 1rem;
+    }
+    .sunsets img{
+        transform: translate(50px , 70px);
+        width: 200px;
+    }
+    .hotel img{
+        transform: translate(50px , 120px);
+        width: 200px;
+    }
+    .beachContent{
+        transform: translate(10px , 0);
+        height: 150px;
+        width: 300px;
+        padding: 1.4rem 1rem;
+    }
+    .beach img{
+        transform: translate(50px , 120px);
+        width: 200px;
+    }
+    .travelContent{
+        transform: translate(-40px , 0px);
+        width: 300px;
+        height: 150px;
+    }
+    .travelContent h1{
+        letter-spacing: 5px;
+    }
+    .travelContent h3{
+        letter-spacing: 8px;
+    }
+    main{
+        min-height: 70vh;
+    }
+    .menuContainer{
+        min-height:100vh ;
+    }
+    
+}
